@@ -1,0 +1,33 @@
+programasaudefacil.com.br/calculadora-de-imc
+
+21:16
+/*
+
+Nome: Nairo A. J. Sanches
+
+Aula 01
+
+Sistema IMC: Entre com a Altura e peso e 
+
+print para o Usuário o Índice e sua Classificacao
+
+
+
+Resul
+
+21:16
+/*
+
+Nome: Nairo A. J. Sanches
+
+Aula 01
+
+Sistema IMC: Entre com a Altura e peso e 
+
+print para o Usuário o Índice e sua Classificacao
+
+
+
+Resultado:: Seu Índice é XX,X e sua Classificacao é XXXXXXX
+
+*/
