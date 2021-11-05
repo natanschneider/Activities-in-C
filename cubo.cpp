@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int cubo (int num)
 {
     int res;
@@ -7,14 +6,13 @@ int cubo (int num)
 
 return res;   
 }
-
-    int valor, res;
-    printf("Digite um numero para saber seu cubo: \n");
-    scanf("%d",valor);
-    res = cubo(valor);
-    printf("\nO cubo é: %d",res);
-
 int main()
 {
+    int valor, resultado;
+    printf("Digite um numero para saber seu cubo: \n");
+    scanf("%d", valor);
+    resultado = cubo(valor);
+    printf("O cubo é: %d", resultado);
+
 return 0;    
 }
