@@ -4,21 +4,21 @@ int main()
 	
 	int Valor [5];
 	int segValor [5];
-	int i, j = 5, calculo;
+	int i, j = 5, calculo, o;
 
-    for(i = 0; i < 3; i++){
+    for(i = 0; i < 5; i++){
         printf("Insira o valor da primeira Array [%d] \n", i);
         scanf("%d", &Valor[i]);
     }
 
-    for(i = 0;i < 3; i++){
-        printf("Insira o valor da segunda Array [%d] \n", i);
-        scanf("%d", &segValor);
+    for(o = 0;o < 5; o++){
+        printf("Insira o valor da segunda Array [%d] \n", o);
+        scanf("%d", &segValor[o]);
     }
 
-    for(i = 0;i < 3; i++){
+    for(i = 0;i < 5; i++){
         j--;
-        calculo = (Valor[i] * segValor[i]);
+        calculo = (Valor[i] * segValor[o]);
         printf("\n[%d] x [%d] = [%d]", i, j, calculo);
     }
 
