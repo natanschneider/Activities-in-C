@@ -10,9 +10,9 @@ int main()
 {
     int valor, resultado;
     printf("Digite um numero para saber seu cubo: \n");
-    scanf("%d", valor);
+    scanf("%d",&valor);
     resultado = cubo(valor);
-    printf("O cubo é: %d", resultado);
+    printf("O cubo é: %d",&resultado);
 
 return 0;    
 }
