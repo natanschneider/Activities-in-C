@@ -6,7 +6,16 @@
 
 int main()
 {
+    int val[4] = {0}, i, calc;
 
+    for(i = 0; i < 4; i++){
+        printf("Digite os valores:");
+        scanf("%d", &val[i]);
+
+        calc = (val[0] + val[1] - val[2] * val[3]);
+
+        printf("\n %d+%d-%d*%d = %d \n", val[0], val[1], val[2], val[3], calc);
+    }
 
 return 0;
 }
