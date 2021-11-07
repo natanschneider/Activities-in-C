@@ -18,7 +18,7 @@ int main()
 
     for(i = 0;i < 5; i++){
         j--;
-        calculo = (Valor[i] * segValor[o]);
+        calculo = (Valor[i] * segValor[j]);
         printf("\n[%d] x [%d] = [%d]", i, j, calculo);
     }
 
