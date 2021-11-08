@@ -4,17 +4,20 @@
 
 #include <stdio.h>
 
+
 int main()
 {
-    int val[4] = {0}, i, calc;
+    int val[4] = {0}, i, calc, j;
 
     for(i = 0; i < 4; i++){
-        printf("Digite os valores:");
-        scanf("%d", &val[i]);
+        for(j = 0; j < 4; j++){
+            printf("Digite um valor:");
+            scanf("%d", &val[i]);
 
-        calc = (val[0] + val[1] - val[2] * val[3]);
-
-        printf("\n %d+%d-%d*%d = %d \n", val[0], val[1], val[2], val[3], calc);
+            printf("Digite uma operação: ");
+            scanf("%d", j);
+ 
+        }
     }
 
 return 0;
