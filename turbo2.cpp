@@ -7,7 +7,7 @@
 int calc(float valor, float segValor, int op)
 {
     float calc;
-    
+
         switch (op)
         {
         case 1:
@@ -29,40 +29,46 @@ int calc(float valor, float segValor, int op)
         default:
         printf("ERRO!");
         }
-    //}
-return (calc);    
+return (op);    
 }
+
 int main(void)
 {
     float val = 0, segVal = 0, result;
     float terVal = 0, quaVal = 0, resu;
-    int j = 0, n = 0;
+    int j = 0, n = 0, i = 0;
     
+    for(i = 0; i < 5; i++){
     printf("Digite um valor: \n");
-    scanf("%.2f", &val);
+    scanf("%f", &val);
 
     printf("Digite o segundo valor: \n");
-    scanf("%.2f", &segVal);
+    scanf("%f", &segVal);
 
     printf("Digite uma operação: \n");
     scanf("%d \n", &j);           
 
     result = calc(val, segVal, j);
-    printf("%.2f \n", result);
+    printf("%2.f \n", result);
+    }
 
     //  PARTE 2 //
 
-    printf("Digite um valor: \n");
-    scanf("%.2f \n", &terVal);
+    //printf("Digite um valor: \n");
+    //scanf("%f \n", &terVal);
 
-    printf("Digite o segundo valor: \n");
-    scanf("%.2f \n", &quaVal);
+    //printf("Digite o segundo valor: \n");
+    //scanf("%f \n", &quaVal);
 
-    printf("Digite uma operação: \n");
-    scanf("%d \n", &n);           
+    //printf("Digite uma operação: \n");
+    //scanf("%d \n", &n);           
 
-    result = calc(terVal, quaVal, n);
-    printf("%.2f \n", resu);
+    //resu = calc(terVal, quaVal, n);
+    //printf("%2.f \n", resu);
+
+    // PARTE 3 //
+
+    
 
 return 0;
 }
