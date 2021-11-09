@@ -1,2 +1,2 @@
-# Activities-in-C
-SenacRS
+# C Activities
+Leaning C language!
