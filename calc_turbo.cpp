@@ -23,54 +23,42 @@ int main(){
 	    
 	    switch(op){
 		    case '+':
-		    	//result = result;
+		    
 			    result += valor;
-			    //printf("%.2f \n", result);	
+			   	
 				printf("\n ## Resultados ## \n case + \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);		    
 				break;
 					
 			case '-':
-				//result = result;
-				//printf("Valor: %.2f \n", valor);
-			    result += result - valor;
-			    //printf("%.2f \n", result);			
+			    result = (result - valor);
 				printf("\n ## Resultados ## \n case - \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);    
 				break;
 				
 			case '/':
-				//result = result;
-			    result += result / valor;
-			    //printf("%.2f \n", result);		
+			    result = (result / valor);	
 				printf("\n ## Resultados ## \n case / \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);	    
 				break;
 				
 		    case '*':
-		    	//result = result;
-		    	//printf("Valor: %.2f \n", valor);
-			    result += result * valor;
-			    //printf("%.2f \n", result);
+			    result = (result * valor);
 				printf("\n ## Resultados ## \n case * \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
 				break;
 				
 			case '=':
-				//result = result;
-				//printf("Valor: %.2f \n", valor);
+				result = result;
 			    printf("\n ## Resultados ## \n case = \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
 			    loop = 1;
 				break;
 						
 			default :
 			    printf("*##* ERRO! *##* \n");
-			    //printf("Valor: %.2f \n", valor);
-				//printf("%.2f \n", result);
 				printf("\n ## Resultados ## \n case default \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);		    
 	    } 
         result = result;
-		printf("\n ## Resultados ## \n Final do Loop \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);   
-	    //printf("O resultado parcial eh: %.2f \n", result);
-
+		printf("\n ## Resultados ## \n Final do Loop \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
+        
 	} while(loop == 0);
-
+     return result;
 	 printf("O resultado final eh: %.2f /n", result);
 	 printf("\n ## Resultados ## \n Fora do Loop \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
 		
