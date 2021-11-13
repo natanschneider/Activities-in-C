@@ -1,57 +1,76 @@
 #include <stdio.h>
 
-int soma(){
-	float valor;
-}
-
-int subtracao(){
-	float valor;
-
-}
-
-int multi(){
-	float valor;
-
-}
-
-int divi(){
-	float valor;
-
-}
-
 int main(){
 	int i = 0, loop = 0;
-	float val = 0, result = 0;
+	float valor = 0, result = 0, result2 = 0;
 	char op;
 	
-    while(loop == 0){
+    do{
+    	valor = 0;
+		result = 0;
+		i = 0;
+		loop = 0;
+
     	printf("Digite um valor: \n");
-	    scanf("%f",&val);
-	
-	    printf("Insira uma operacao: (Para apresentar o resultado insira '=') \n");
-	    scanf(" %c",&op);
-	
-	    //switch( op ){
-	    //	case '=':
-		//		loop = 11;
-		//		printf("Seu resultado final eh: %.2f \n", result);
-		//		break;	
-		//  case '+':
-		//	    result = (val + val);
-		//		break;	
-		//	case '-':
-		//	    result = (val - val - val);
-		//		break;
-		//	case '/':
-		//	    result = (val / val / val);
-		//		break;
-		//  case '*':
-		//	    result = (val * val * val);
-		//		break;
-		//	default :
-		//	    printf("ERRO!");				    
-	    //}    
-	}	
+	    scanf(" %f", &valor);
+		printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
+	    printf("\n Digitou o valor: \n");
+	    
+	    printf("Insira uma operacao: Para apresentar o resultado insira = \n");
+	    scanf(" %c", &op);
+	    printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
+	    printf("\n Digitou a operacao! \n");
+	    
+	    switch(op){
+		    case '+':
+		    	//result = result;
+			    result += valor;
+			    printf("%.2f \n", result);	
+				printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);		    
+				break;
+					
+			case '-':
+				//result = result;
+				printf("Valor: %.2f \n", valor);
+			    result += valor - result;
+			    printf("%.2f \n", result);			
+				printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);    
+				break;
+				
+			case '/':
+				//result = result;
+			    result += valor / result;
+			    printf("%.2f \n", result);		
+				printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);	    
+				break;
+				
+		    case '*':
+		    	//result = result;
+		    	printf("Valor: %.2f \n", valor);
+			    result += valor * result;
+			    printf("%.2f \n", result);
+				printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
+				break;
+				
+			case '=':
+				//result = result;
+				printf("Valor: %.2f \n", valor);
+			    printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
+			    loop = 1;
+				break;
+						
+			default :
+			    printf("ERRO! \n");
+			    printf("Valor: %.2f \n", valor);
+				printf("%.2f \n", result);
+				printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);		    
+	    } 
+		printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);   
+	    printf("O resultado parcial eh: %.2f \n", result);
+	} while(loop == 0);
+	 printf("\n ## Diagnostico ## \n valor: %.2f \n result: %.2f \n op: %c \n", valor, result, op);
+	 printf("O resultado final eh: %.2f /n", result);
+		
 return 0;	
 }
 
