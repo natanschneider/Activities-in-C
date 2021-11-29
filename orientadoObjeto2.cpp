@@ -22,6 +22,7 @@ int Vetores::Vetor(int vet[5]){
 	        break;	
         }	
     }
+return n;
 }
 
 int main(){
