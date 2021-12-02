@@ -2,30 +2,46 @@
 using namespace std;
 
 class merge{
-	public:
-	    int arr[5];
-	    int segArr[5];
-	    int terArr[11];
-	    int i, j;
+	    int arr[6];
+	    int segArr[6];
+	    int mergArr[12];
+	    int i, k = 0;
+	    public:
+	        vet3(int mergArr[12]);
+	        vet2(int segArr[6]);
+	        vet1(int arr[6]);
 };
 
-int merge::vet(int arr[5]){
-	for(i=0; i<5; i++){
+int merge::vet3(int mergArr[6]){
+	for(i=0; i<6; i++){
+		cout << "Digite o primeiro Array: " << i <<  endl;
 		cin >> arr[i];
 	}
-	
-	for(j=0; j<5; j++){
-		cin >> segArr[j];
-	}
-	
-	//terArr = arr + segArr;
-	
-	
-	
-}	  
 
-int main(){
-	
+	for(i=0; i<6; i++){	
+	    cout << "Digite o segundo Array: " << i <<  endl;
+		cin >> segArr[i];
+	}
+
+	for(i=0; i<6; i++){
+        mergArr[k] = arr[i];
+        k++;
+    }
+
+    for(i=6; i<12; i++){
+        mergArr[k] = segArr[i - 6];
+        k++;
+    }
+
+    for(k=0; k<12; k++){
+        cout << mergArr[k] << ' ';
+    }
+}
+
+int main(){	
+    int mergArr[12];
+    merge vetor;
+    vetor.vet3(mergArr);
 return 0;	
 }
 
