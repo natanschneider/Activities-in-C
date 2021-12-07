@@ -5,15 +5,16 @@ class merge{
 	    int arr[6];
 	    int segArr[6];
 	    int mergArr[12];
-	    int terArr [];
+	    int terArr[12];
 	    int i, k = 0;
 	    public:
-	    	vet4(int terArr[]);
+	    	vet4(int terArr[12]);
 	        vet3(int mergArr[12]);
 	        vet2(int segArr[6]);
 	        vet1(int arr[6]);
 };
 
+//junta os arrays:
 int merge::vet3(int mergArr[6]){
 	for(i=0; i<6; i++){
 		cout << "Digite o primeiro Array: " << i <<  endl;
@@ -31,24 +32,66 @@ int merge::vet3(int mergArr[6]){
     }
 
     for(i=6; i<12; i++){
-    	if(segArr[i] == mergArr[k]){
-            mergArr[k] = segArr[i - 6];
-            k++;
-        }
+        mergArr[k] = segArr[i - 6];
+        k++;
     }
 
+    cout << "mergArr" << endl;
     for(k=0; k<12; k++){
         cout << mergArr[k] << ' ';
     }
+    cout << endl;
+    
+    for(i=0; i<12; i++){
+		for(k=0; k<12; k++){
+			terArr[i] = mergArr[k];
+	    }
+    }
+    
+    cout << "terArr" << endl;
+    for(i=0; i<12; i++){
+        cout << terArr[i] << ' ';
+   }
+    cout << endl;
 }
 
-int merge::vet4(int terArr[]){
+//junta e apaga os repetidos no array:
+int merge::vet4(int terArr[12]){
+	int j;
 	
+	for(i=0; i<12; i++){
+		for(k=0; k<12; k++){
+			terArr[k] = mergArr[i];
+	    }
+    }
+    
+    cout << "terArr" << endl;
+    for(i=0; i<12; i++){
+        cout << terArr[i] << ' ';
+   }
+    cout << endl;
+	
+   	for (i=0; i<12; i++){
+       for (j=i; j<12; j++){
+           if(terArr[i] == terArr[j]){
+              if(i != j){
+              terArr[i] - terArr[j];
+              break;
+              }
+           }
+       }
+    }
+   
+   cout << "Array final" << endl;
+   for(i=0; i<12; i++){
+        cout << terArr[i] << ' ';
+   }
+   cout << endl;
 }
 
 int main(){	
     int mergArr[12];
-    int terArr[];
+    int terArr[12];
     merge vetor;
     vetor.vet3(mergArr);
     vetor.vet4(terArr);
