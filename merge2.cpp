@@ -16,6 +16,7 @@ class merge{
 
 //junta os arrays:
 int merge::vet3(int mergArr[6]){
+	int o = 0;
 	for(i=0; i<6; i++){
 		cout << "Digite o primeiro Array: " << i <<  endl;
 		cin >> arr[i];
@@ -43,9 +44,8 @@ int merge::vet3(int mergArr[6]){
     cout << endl;
     
     for(i=0; i<12; i++){
-		for(k=0; k<12; k++){
-			terArr[i] = mergArr[k];
-	    }
+			terArr[i] = mergArr[o];
+			o++;
     }
     
     cout << "terArr" << endl;
@@ -57,6 +57,7 @@ int merge::vet3(int mergArr[6]){
 
 //junta e apaga os repetidos no array:
 int merge::vet4(int terArr[12]){
+	
 	int j;
 	
 	for(i=0; i<12; i++){
