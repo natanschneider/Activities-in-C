@@ -11,7 +11,7 @@ class vetores{
 int vetores::vet(int vet[5]){
     for (i=0;i<5;i++){
         cin >> vet[i];
-} 
+    } 
 
 for (i=0;i<5;i++){
     for (j=i;j<5;j++){

@@ -1,10 +1,10 @@
 #include <iostream>
-
 using namespace std;
 
 class soma{
     int numero;
     int resultado;
+    int somaDois;
     public:
         somaDois = (int valor);
 };
@@ -20,3 +20,4 @@ int main(){
 
 return 0;
 }
+
