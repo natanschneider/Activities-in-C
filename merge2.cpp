@@ -63,7 +63,7 @@ int merge::vet4(int terArr[12]){
     cout << "terArr" << endl;
     for(i=0; i<12; i++){
         cout << terArr[i] << ' ';
-   }
+    }
     cout << endl;
 	
    	for (i=0; i<12; i++){
