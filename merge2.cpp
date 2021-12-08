@@ -6,7 +6,7 @@ class merge{
 	    int segArr[6];
 	    int mergArr[12];
 	    int terArr[12];
-	    int i, k = 0;
+	    int i, k = 0, o = 0;
 	    public:
 	    	vet4(int terArr[12]);
 	        vet3(int mergArr[12]);
@@ -58,14 +58,8 @@ int merge::vet3(int mergArr[6]){
 //junta e apaga os repetidos no array:
 int merge::vet4(int terArr[12]){
 	
-	int j;
-	
-	for(i=0; i<12; i++){
-		for(k=0; k<12; k++){
-			terArr[k] = mergArr[i];
-	    }
-    }
-    
+	int j, o = 0;
+
     cout << "terArr" << endl;
     for(i=0; i<12; i++){
         cout << terArr[i] << ' ';
@@ -94,8 +88,9 @@ int main(){
     int mergArr[12];
     int terArr[12];
     merge vetor;
+    merge vetor2;
     vetor.vet3(mergArr);
-    vetor.vet4(terArr);
+    vetor2.vet4(terArr);
 return 0;	
 }
 
